@@ -1,0 +1,54 @@
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>Help Page for Expert - Chamber HV Monitor - Run 2</title>
+   <link href="local.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>Help Page for Expert - Chamber HV Monitor &mdash; Run 2</h1>
+
+<!-- ================================================================ -->
+<h2>Location of Program</h2>
+
+<ul>
+ <li><tt>e906-gat3:/seaquest/chambers/hvmon_cham/run2/HV</tt> ... Server
+ <li><tt>e906-gat3:/seaquest/chambers/hvmon_cham/run2/interface</tt> ... Data uploader
+ <li><tt>e906-gat2:/var/www/html/hvmon_cham_exp/run2</tt> ... Browser interface
+</ul>
+
+<!-- ================================================================ -->
+<h2>How to Change Warning Threshold</h2>
+
+The warning threshold is defined in lines 67-186 of <tt>index_sub.js</tt>.
+Please modify these lines when you need to change the thresholds.
+
+<p>
+For example, here is the definitions for V &amp; I of D1U;
+<pre>
+SetupOneGroup5(npt, data[ 0], "d1u" , "V", 1e-3, "kV"   , 1.25, -0.10, -0.05, +0.15, +0.20);
+SetupOneGroup4(npt, data[ 1], "d1u" , "I", 0.01, "&mu;A", 0.00,  0.00,  1.00,  2.00);
+</pre>
+
+In the &quot;SetupOneGroup5&quot; function for the high voltage,
+the last 5 numbers &quot;<tt>1.25, -0.10, -0.05, +0.15, +0.20</tt>&quot; mean 
+&quot;<tt>V0, dV_l2, dV_l1, dV_h1, dV_h2</tt>&quot;, where
+<ul>
+  <li><tt>V0 + dV_l2</tt> ... Lower threshold for error (red)
+  <li><tt>V0 + dV_l1</tt> ... Lower threshold for warning (yellow)
+  <li><tt>V0 + dV_h1</tt> ... Higher threshold for warning (yellow)
+  <li><tt>V0 + dV_h2</tt> ... Higher threshold for error (red)
+</ul>
+
+In the &quot;SetupOneGroup4&quot; function for the leak current,
+the last 4 numbers &quot;<tt>0.00,  0.00,  1.00,  2.00</tt>&quot; mean 
+&quot;<tt>I_l2, I_l1, I_h1, I_h2</tt>&quot;, where
+<ul>
+  <li><tt>I_l2</tt> ... Lower threshold for error (red)
+  <li><tt>I_l1</tt> ... Lower threshold for warning (yellow)
+  <li><tt>I_h1</tt> ... Higher threshold for warning (yellow)
+  <li><tt>I_h2</tt> ... Higher threshold for error (red)
+</ul>
+
+<!-- ================================================================ -->
+</body>
+</html>

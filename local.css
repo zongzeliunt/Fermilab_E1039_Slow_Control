@@ -1,0 +1,212 @@
+* {
+   line-height:    120%;
+   vertical-align: center;
+}
+
+body {
+   margin:     10pt;
+}
+
+#val* {
+   display: inline;
+}
+
+.arrange {
+  margin:   0;
+  padding:  0;
+  width:    auto;
+  border:   0;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+TABLE.last {
+  margin:               10pt;
+  width:                95%;
+  border:               3px solid royalblue;
+  border-collapse:      collapse;
+}
+
+TABLE.conf {
+  margin:		10pt;
+  width:       		auto;
+  border:		3px solid royalblue;
+  border-collapse:      collapse;
+}
+
+TABLE.last TD, TABLE.conf TD {
+  color:		black;
+  background-color:	aliceblue;
+  border:		2px solid royalblue;
+  padding:              2px;
+  text-align:     center;
+}
+
+TABLE.last TH, TABLE.conf TH {
+  color:		black;
+  font-weight:		bold;
+  background-color:	skyblue;
+  border:		2px solid royalblue;
+  padding:              2px;
+  text-align:     center;
+}
+
+table.arr {
+    align: center;
+    width: 100%;
+}
+
+table.arr td {
+    width:          50%;
+    padding:        5pt;
+    align:          center;
+    text-align:     center;
+    virtical-align: center;
+}
+
+table.ares {
+    align: center;
+    width: 100%;
+}
+
+table.ares td {
+    width:          100%;
+    padding:        5pt;
+    align:          center;
+    text-align:     center;
+    virtical-align: center;
+}
+
+H1 {
+  text-align:		center;
+  padding:		20px;
+  background-image:     url(../image/bg_h1_blue.png);
+  background-repeat:    no-repeat;
+  background-position:  left top;
+  border-top:		8px solid royalblue;
+  border-right:		none;
+  border-bottom:	8px solid royalblue;
+  border-left:		none;
+}
+
+H2 {
+  text-align:           left;
+  padding:		5px;
+  width:		85%;
+  background-image:     url(../image/bg_h2_blue.png);
+  background-repeat:    repeat-x;
+  background-position:  bottom;
+  border-bottom:        4px solid royalblue;
+  border-right:	        none;
+  border-top:           none;
+  border-left:	        none;
+}
+
+H3 {
+  text-align:           left;
+  padding:		5px;
+  width:		80%;
+  background-image:     url(../image/bg_h3_blue.png);
+  background-repeat:    no-repeat;
+  background-position:  left bottom;
+  border-top:	        none;
+  border-right:	        none;
+  border-bottom:        4px solid royalblue;
+  border-left:	        none;
+}
+
+p {
+   margin-top: 10px;
+}
+
+button {
+   font-size: 18px;
+   padding: 1px 7px;
+}
+
+input {
+   font-size: 18px;
+}
+
+input[type=checkbox] {
+   margin: 7px;
+}
+
+EM, STRONG {
+  color:                red;
+}
+
+TT {
+  font-family:          monospace, fantasy, cursive;
+  font-weight:          normal;
+  color:                green;
+}
+
+PRE {
+  background-color:     antiquewhite;
+}
+
+A.title       { text-decoration: none     ; }
+A.title:hover { text-decoration: underline; }
+
+#header {
+   position: relative;
+   width: 900px;
+   margin: auto;
+}
+
+#header h2 {
+   margin-left: 10px;
+   vertical-align: middle;
+   font-size: 42px;
+   font-weight: bold;
+   text-decoration: none;
+   color: #000;
+}
+
+#content {
+   width: 880px;
+   margin: 0 auto;
+   padding: 10px;
+}
+
+#footer {
+   margin-top: 25px;
+   margin-bottom: 10px;
+   text-align: center;
+   font-size: 12px;
+   color: #999;
+}
+
+.demo-container {
+   box-sizing: border-box;
+   width: 850px;
+   height: 450px;
+   padding: 20px 15px 15px 15px;
+   margin: 15px auto 30px auto;
+   border: 1px solid #ddd;
+   background: #fff;
+   background: linear-gradient(#f6f6f6 0, #fff 50px);
+   background: -o-linear-gradient(#f6f6f6 0, #fff 50px);
+   background: -ms-linear-gradient(#f6f6f6 0, #fff 50px);
+   background: -moz-linear-gradient(#f6f6f6 0, #fff 50px);
+   background: -webkit-linear-gradient(#f6f6f6 0, #fff 50px);
+   box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+   -o-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+   -ms-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+   -moz-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+   -webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.demo-placeholder {
+   width: 100%;
+   height: 100%;
+   font-size: 14px;
+   line-height: 1.2em;
+}
+
+.legend table {
+   border-spacing: 5px;
+}
